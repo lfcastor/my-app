@@ -12,18 +12,18 @@ import Home from './pages/Home'
 
 const App = () => {
   return (
-    <TemplateDefault>
-      <Router>
-        <Switch>
-          <Route path='/customers'>
-            <TempalatePage title="Clientes" Component={Customers} />
-          </Route>
-          <Route path='/'>
-          <TempalatePage title="Página Inicial" Component={Home} />
-          </Route>
-        </Switch>
+    <Router>
+        <TemplateDefault>
+          <Switch>
+            <Route path='/customers'>
+              <TempalatePage title="Clientes" Component={Customers} />
+            </Route>
+            <Route path='/'>
+            <TempalatePage title="Página Inicial" Component={Home} />
+            </Route>
+          </Switch>
+        </TemplateDefault>
       </Router>
-    </TemplateDefault>
   )
 }
 
